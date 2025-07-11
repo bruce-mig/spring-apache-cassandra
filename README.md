@@ -81,7 +81,7 @@ select * from users;
 #### 1. Build & Run Spring Boot App
 
 ```bash
-cd <projects>
+cd <project-name>
 ./mvnw spring-boot:run
 ```
 
