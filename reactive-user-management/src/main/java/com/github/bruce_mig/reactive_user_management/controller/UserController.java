@@ -38,14 +38,4 @@ public class UserController {
         return userRepository.findByAgeLessThan(age);
     }
 
-    @PostConstruct
-    public void saveUser(){
-        List<User> users = new ArrayList<>();
-        users.add(new User(6347, "User1", "City1", 25));
-        users.add(new User(6348, "User2", "City2", 28));
-        users.add(new User(6349, "User3", "City3", 27));
-        users.add(new User(6350, "User4", "City3", 22));
-        userRepository.saveAll(users);
-    }
-
 }
