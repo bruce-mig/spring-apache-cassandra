@@ -86,6 +86,13 @@ CREATE TABLE IF NOT EXISTS users (id int PRIMARY KEY,name text,address text,age 
 
 # add index on columns to be filtered 
 create index on users(age);
+create index on users(address);
+
+# insert
+INSERT INTO migeri.users (id ,name ,address ,age ) VALUES (6347, 'User1', 'City1', 25);
+INSERT INTO migeri.users (id ,name ,address ,age ) VALUES (6348, 'User2', 'City2', 28);
+INSERT INTO migeri.users (id ,name ,address ,age ) VALUES (6349, 'User3', 'City3', 27);
+INSERT INTO migeri.users (id ,name ,address ,age ) VALUES (6350, 'User4', 'City4', 22);
 
 select * from users;
 ```
