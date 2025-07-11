@@ -35,10 +35,11 @@ cd spring-apache-cassandra
 ---
 ### 2. Set up Cassandra cluster
 
-Start multi-node Pulsar cluster:
+Start multi-node Pulsar cluster:  
+
 `docker compose up -d`
 
-Or, for standalone mode:
+Or, for standalone mode:  
 
 `docker compose up cassandra-1 -d`
 
@@ -61,7 +62,7 @@ CREATE KEYSPACE IF NOT EXISTS migeri WITH REPLICATION ={ 'class' : 'SimpleStrate
 
 ### user-management-cassandra
 
-Configure the cluster for the user-management-cassandra project as below.
+Configure the cluster for the [user-management-cassandra](https://github.com/bruce-mig/spring-apache-cassandra/tree/main/user-management-cassandra) project as below.
 
 ```bash
 use migeri;
@@ -96,7 +97,7 @@ http://localhost:8080/swagger-ui/index.html#/
 - docker-compose.yaml: Docker Compose configurations
 
 ## References
-[Apache Cassandra Documentation](https://cassandra.apache.org/)  
+[Apache Cassandra Documentation](https://cassandra.apache.org/doc/latest/)  
 [Spring Data for Apache Cassandra](https://spring.io/projects/spring-data-cassandra)  
 
 ## License
