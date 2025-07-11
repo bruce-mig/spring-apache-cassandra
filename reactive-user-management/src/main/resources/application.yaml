@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: reactive-user-management
+  cassandra:
+    keyspace-name: migeri
+    local-datacenter: my-datacenter-1
+    port: 9042
+  flyway:
+    url: jdbc:cassandra://localhost:9042/migeri
+    sql-migration-suffixes: .cql

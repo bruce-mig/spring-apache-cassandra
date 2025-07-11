@@ -75,6 +75,21 @@ create index on users(age);
 select * from users;
 ```
 
+### reactive-user-management
+
+Configure the cluster for the [reactive-user-management](https://github.com/bruce-mig/spring-apache-cassandra/tree/main/reactive-user-management) project as below.
+
+```bash
+use migeri;
+
+CREATE TABLE IF NOT EXISTS users (id int PRIMARY KEY,name text,address text,age int);
+
+# add index on columns to be filtered 
+create index on users(age);
+
+select * from users;
+```
+
 ---
 
 ## Application Usage
@@ -93,6 +108,7 @@ http://localhost:8080/swagger-ui/index.html#/
 ## Project Structure
 
 - user-management-cassandra: Spring Boot project
+- reactive-user-management: Spring Boot project using Reactive Cassandra Repositories and Reactive web
 - scripts: CQL Scripts 
 - docker-compose.yaml: Docker Compose configurations
 
